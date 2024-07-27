@@ -42,6 +42,7 @@ cd smart-office-management
      - `rooms`
      - `bookings`
      - `occupants`
+     - 'users'
 
 2. **Database Schema:**
    ```sql
@@ -67,6 +68,12 @@ cd smart-office-management
        PRIMARY KEY (roomId),
        FOREIGN KEY (roomId) REFERENCES rooms(roomId)
    );
+   
+   CREATE TABLE users (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+);
    ```
 
 ### 3. Update Database Connection
