@@ -42,7 +42,7 @@ cd smart-office-management
      - `rooms`
      - `bookings`
      - `occupants`
-     - 'users'
+     - `users`
 
 2. **Database Schema:**
    ```sql
