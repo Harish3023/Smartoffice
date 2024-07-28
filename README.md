@@ -29,6 +29,8 @@ The Smart Office Management System is a console-based application designed to ma
 - Book Room
 - Cancel Booking
 - Add Occupants
+  
+![image](https://github.com/user-attachments/assets/13a53dbd-7cf1-43df-b39f-a2026b891deb)
 
 ###Root directory:
 
