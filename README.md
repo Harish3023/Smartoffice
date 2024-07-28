@@ -10,21 +10,77 @@ For a comprehensive README file on GitHub, you should include the following sect
 ## Overview
 
 The Smart Office Management System is a console-based application designed to manage office space efficiently. It handles room configurations, bookings, and occupancy tracking, including automated control of room amenities and notifications for bookings.
+# Problem Description
 
+
+
+## Features
+
+### Admin Functions
+- Configure Rooms
+- Set Room  MaxCapacity
+- Add Room
+- List Rooms
+- Cancel Booking
+- View Room Usage Statistics
+- Add occupants
+
+### User Functions
+- Book Room
+- Cancel Booking
+- Add Occupants
+- 
 ## Prerequisites
 
-1. **Java Development Kit (JDK)**
-   - Ensure JDK 11 or higher is installed.
-   - [Download JDK](https://www.oracle.com/java/technologies/javase-downloads.html)
+To run the Smart Office Management System, you will need the following software installed:
 
-2. **Database Server**
-   - **MySQL** or **SQL Server**.
-   - Install and configure the database server.
-   - [MySQL Installation Guide](https://dev.mysql.com/doc/mysql-installation-excerpt/8.0/en/)
-   - [SQL Server Installation Guide](https://docs.microsoft.com/en-us/sql/sql-server/install/install-sql-server)
+### MySQL Workbench
 
-3. **Database Connection**
-   - Ensure the `DatabaseConnection` class is properly configured to connect to your database.
+- [MySQL Workbench 8.0 CE (Community Edition) for Windows](https://dev.mysql.com/downloads/workbench/)
+- [MySQL Workbench 8.0 CE (Community Edition) for macOS](https://dev.mysql.com/downloads/workbench/)
+
+### MySQL Server
+
+- [MySQL Server for Windows](https://dev.mysql.com/downloads/mysql/)
+- [MySQL Server for macOS](https://dev.mysql.com/downloads/mysql/)
+
+### Apache NetBeans IDE
+
+- [Apache NetBeans IDE 20](https://netbeans.apache.org/download/index.html)
+
+### Java Development Kit (JDK)
+
+- [JDK 19](https://www.oracle.com/java/technologies/javase/jdk19-archive-downloads.html)
+- [JDK 22](https://www.oracle.com/java/technologies/javase/jdk22-archive-downloads.html)
+
+### JDBC Driver
+
+- [MySQL Connector/J 8.0.26](https://dev.mysql.com/downloads/connector/j/)
+
+## Installation and Setup
+
+### 1. Install MySQL Server
+
+Download and install the MySQL Server from the links provided above for your respective operating system.
+
+### 2. Install MySQL Workbench
+
+Download and install MySQL Workbench 8.0 CE from the links provided above for your respective operating system.
+
+### 3. Install Apache NetBeans IDE
+
+Download and install Apache NetBeans IDE 20 from the provided link.
+
+### 4. Install JDK
+
+Download and install JDK 19 or JDK 22 from the provided links.
+### 5. Configure Database Connection
+
+Ensure that the `DatabaseConnection` class in your project is configured with the correct database connection details.
+
+### 6. Add MySQL Connector/J to Your Project
+
+Download the MySQL Connector/J 8.0.26 and add it to your project's classpath in Apache NetBeans IDE.
 
 ## Setup and Configuration
 
@@ -78,6 +134,7 @@ cd smart-office-management
     );
 
    ```
+
 
 ### 3. Update Database Connection
 
