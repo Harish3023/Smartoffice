@@ -36,6 +36,7 @@ The Smart Office Management System is a console-based application designed to ma
 
 ![image](https://github.com/user-attachments/assets/4bb00603-4188-4d35-8ea3-0c3a33fa40e6)
 
+![image](https://github.com/user-attachments/assets/fe9d7709-0048-4abc-827e-e0c57e03dfc0)
 
 ## Prerequisites
 
