@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
 import java.util.Scanner;
 
 public class RoomManagement {
@@ -62,14 +63,34 @@ public class RoomManagement {
 
     public static void listRooms() {
         Connection conn = DatabaseConnection.getInstance().getConnection();
-        String query = "SELECT * FROM rooms";
+        String query = "SELECT r.roomId, r.occupied, r.maxCapacity, " +
+                       "b.id, b.username, b.startTime, b.endTime " +
+                       "FROM rooms r " +
+                       "LEFT JOIN bookings b ON r.roomId = b.roomId " +
+                       "ORDER BY r.roomId";
         try (PreparedStatement stmt = conn.prepareStatement(query);
              ResultSet rs = stmt.executeQuery()) {
+
+            SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
+
             while (rs.next()) {
                 int roomId = rs.getInt("roomId");
                 boolean occupied = rs.getBoolean("occupied");
                 int maxCapacity = rs.getInt("maxCapacity");
+                int bookingId = rs.getInt("id");
+                String username = rs.getString("username");
+                java.sql.Timestamp startTime = rs.getTimestamp("startTime");
+                java.sql.Timestamp endTime = rs.getTimestamp("endTime");
+
                 System.out.println("Room ID: " + roomId + ", Occupied: " + occupied + ", Max Capacity: " + maxCapacity);
+
+                if (username != null) {
+                    String startTimeStr = sdf.format(startTime);
+                    String endTimeStr = sdf.format(endTime);
+                    System.out.println("Booking ID: " + bookingId + ", Booked By: " + username + ", Duration: " + startTimeStr + " to " + endTimeStr);
+                } else {
+                    System.out.println("Booking ID: None, Booked By: None");
+                }
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -91,7 +112,7 @@ public class RoomManagement {
         return false;
     }
 
-     public static void updateRoomOccupancy(int roomId, boolean occupied) {
+    public static void updateRoomOccupancy(int roomId, boolean occupied) {
         Connection conn = DatabaseConnection.getInstance().getConnection();
         String query = "UPDATE rooms SET occupied = ? WHERE roomId = ?";
         try (PreparedStatement stmt = conn.prepareStatement(query)) {

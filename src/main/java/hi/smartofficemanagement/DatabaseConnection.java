@@ -6,14 +6,14 @@ import java.sql.SQLException;
 
 public class DatabaseConnection {
     private static DatabaseConnection instance;
-    private Connection connection;
+    private Connection conn;
 
     private DatabaseConnection() {
-        String url = "jdbc:mysql://localhost:3306/smartoffice?zeroDateTimeBehavior=convertToNull";
-        String username = "root";
-        String password = "";
         try {
-            connection = DriverManager.getConnection(url, username, password);
+            String url = "jdbc:mysql://localhost:3306/smartoffice"; // Replace with your database name
+            String user = "root"; // Replace with your database username
+            String password = "password"; // Replace with your database password
+            conn = DriverManager.getConnection(url, user, password);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -27,6 +27,6 @@ public class DatabaseConnection {
     }
 
     public Connection getConnection() {
-        return connection;
+        return conn;
     }
 }
