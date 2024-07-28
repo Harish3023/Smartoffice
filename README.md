@@ -29,7 +29,13 @@ The Smart Office Management System is a console-based application designed to ma
 - Book Room
 - Cancel Booking
 - Add Occupants
-- 
+
+###Root directory:
+
+![image](https://github.com/user-attachments/assets/4bb00603-4188-4d35-8ea3-0c3a33fa40e6)
+
+**Compile and Run SmartOfficeManagement.java
+
 ## Prerequisites
 
 To run the Smart Office Management System, you will need the following software installed:
