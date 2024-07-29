@@ -30,13 +30,41 @@ The Smart Office Management System is a console-based application designed to ma
 - Cancel Booking
 - Add Occupants
   
-![image](https://github.com/user-attachments/assets/13a53dbd-7cf1-43df-b39f-a2026b891deb)
+<img src="https://github.com/user-attachments/assets/13a53dbd-7cf1-43df-b39f-a2026b891deb" width=300>
 
-###Root directory:
 
-![image](https://github.com/user-attachments/assets/4bb00603-4188-4d35-8ea3-0c3a33fa40e6)
+**Booking room**
 
-![image](https://github.com/user-attachments/assets/fe9d7709-0048-4abc-827e-e0c57e03dfc0)
+<img src="https://github.com/user-attachments/assets/fe9d7709-0048-4abc-827e-e0c57e03dfc0" width=300>
+
+**Cancel booking**
+
+<img src="https://github.com/user-attachments/assets/1d86441f-9b9c-4e48-8282-f0e62236816a " width=300>
+
+**Configure room**
+
+<img src="https://github.com/user-attachments/assets/d72e71d5-9ddd-419a-8e0e-dd02496f8186" width=300>
+
+**Add a occupant**
+
+<img src="https://github.com/user-attachments/assets/28034350-1ae0-4e2d-b23b-6b3c14f48bd7" width=300>
+
+**Set max room capacity**
+
+<img src="https://github.com/user-attachments/assets/5e3df6dc-d6e8-4c11-a6d7-5bf20f906893" width=300>
+
+**Add a room**
+
+<img src="https://github.com/user-attachments/assets/046877e5-ab04-4685-8d61-bed58da221e7" width=300>
+
+**Room Usage Statistics**
+
+<img src="https://github.com/user-attachments/assets/95526bce-1d6e-4d94-bba3-f147a157d4aa" width=300>
+
+
+### Root directory:
+
+<img src="https://github.com/user-attachments/assets/4bb00603-4188-4d35-8ea3-0c3a33fa40e6" width=300>
 
 ## Prerequisites
 
